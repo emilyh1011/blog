@@ -67,11 +67,11 @@ function AboutMe() {
 
       {/**Add a video player */}
       <div className = 'mb-40'>
-        <h1 className="text-center font-merriweather text-[40px] font-bold mb-[30px] selection:bg-lightblue selection:text-lightyellow ">The original @emsfeelingsjournal</h1>
+        <h1 className="text-center font-merriweather text-[40px] font-bold mb-[30px] selection:bg-lightblue selection:text-lightyellow ">@emsfeelingsjournal</h1>
 
         {/**Remember justify- horiz center, align- vertical center */}
         <div className="flex justify-center hover: cursor-pointer">
-          <ReactPlayer controls={true} url={'https://blog2photos.s3.us-east-2.amazonaws.com/blogAboutMeVid.mov'} height="500" className="object-center " />
+          <ReactPlayer controls={true} url={'https://blog2photos.s3.us-east-2.amazonaws.com/IAmEmVideo.mp4'} height="500" className="object-center " />
         </div>
 
       </div>

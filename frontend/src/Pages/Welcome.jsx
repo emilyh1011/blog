@@ -83,7 +83,8 @@ function Welcome() {
     "I wish we ended better.",
     "You became the clouds before I left, but when my friends don't look I call out sunshine for you.",
     "I am love, and I am at peace.",
-    "Vulnerability connects people, stay open."],
+    "Vulnerability connects people, stay open.",
+    "I am Em, and I accept myself for being."],
     loop: true, //run infinite loop on text
     typeSpeed: 120,
     deleteSpeed: 120,
