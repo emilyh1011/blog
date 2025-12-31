@@ -177,7 +177,7 @@ function Home() {
         console.log(returnedPosts); //good
         console.log("searchQuery now: "); //good
         console.log(searchQuery);
-        filterPosts("All");
+        filterPost("All");
       });
 
     }catch(error){ //Failed to make API get request
@@ -198,7 +198,7 @@ function Home() {
       console.log("Displaying normal posts");
       return (
         <>
-        {/*Check if posts array is loaded in but also check if posts array has at least one post*/}
+        {/*check if posts array has at least one post*/}
           {posts.length>0? <IntroPost post={posts[0]}/>:null}
 
           {/*Grid of rest of blog posts */}
@@ -239,7 +239,7 @@ function Home() {
 
 
   return (
-    <div>
+    <div className = "flex flex-col items-center gap-12 px-8">
         {/*Nest components in order of how you want to view them on webpage*/}
         {/*Search bar section, we are saving a tag as a prop to pass into our Search(tag) component*/}
         {/*Multiple props syntax: nameOfProp = {}, nameOfProp2={} */}

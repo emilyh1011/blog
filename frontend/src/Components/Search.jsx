@@ -48,18 +48,18 @@ function Search({selectedTag, onSearch}) {
     Now, just use %, so margin always stays proportional to screen*/
     }
   return (
-    <div className = 'flex items-center mt-8 flex-col px-[5%]'>
+    <div className = 'flex flex-col items-center w-3/5'>
         {/*Center banner, add margin to top of banner*/}
-        <img src= "https://blog2photos.s3.us-east-2.amazonaws.com/welcomeCarouselPhotos/emilyAlexBungee.jpg" className = 'max-w-[900px] h-auto rounded-2xl w-full'/>
+        <img src= "https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125407/SearchBarPhotoEABungee_d5mzav.jpg" className = 'rounded-2xl w-full'/>
 
         {/*Actual search bar, wrap it in a div*/}
         {/*Remember, width full to extend search bar to fill whole container, but 5% padding of container
         applied and we apply our own padding to search bar to make it smaller */}
         {/*Remember flex puts everything in one line, so we put our search icon and Search placeholder in same line */}
         {/*Adjusting text size for an icon is same as adjusting size of icon */}
-        <div className = 'flex bg-white shadow-lg max-w-[400px] p-9 rounded-lg mt-[-35px] w-full items-center'>
-            <IoIosSearch className= 'text-[20px] text-gray-400' />
-            <input type = 'text' placeholder= {searchQuery} className = 'outline-none ml-2' 
+        <div className = 'flex bg-white shadow-lg items-center w-3/4 p-2 -mt-6 rounded-md sm:p-3 sm:-mt-7 sm:rounded-lg md:p-4 md:-mt-8 md:rounded-lg lg:p-6 lg:-mt-9 lg:rounded-xl'>
+            <IoIosSearch className= 'text-[14px] sm:text-[16px] md:text-[20px] text-gray-400' />
+            <input type = 'text' placeholder= {searchQuery} className = 'text-[13px] sm:text-[14px] md:text-[16px] outline-none ml-2 w-full' 
             onChange={(event)=>{
                 setSearchQuery(event.target.value); //Every time user changes input in search bar, we want to save this as a possible search query
                 
@@ -78,7 +78,7 @@ function Search({selectedTag, onSearch}) {
         {/*Tags to filter btwn diff blog sections. Map each item in tags array as a new bullet in
         unordered list. We want to display the name of the section, so item.name. 
         To make tags all appear in horizontal line, we can use flex style for div*/}
-        <div className = 'flex gap-10 justify-center mt-5'>
+        <div className = 'flex justify-center w-full gap-2 mt-3 sm:gap-4 sm:mt-4 md:gap-6 md:mt-4 lg:gap-8 lg:mt-5'>
             
                 {/*Add index as another parameter, since we were able to save this activeIndex */}
                 {/*map creates a new array of elements, new array of tags, where we save
@@ -107,9 +107,14 @@ function Search({selectedTag, onSearch}) {
                         }}
                         className={`${index == activeIndex ?
                             'bg-lightblue text-white' : null} 
-                        p-1 md:px-4 pb-2 rounded-sm md:rounded-full cursor-pointer 
-                        hover:scale-110 hover:border-[1px] border-lightblue
-                        transition-all duration-100 ease-in-out`}>
+                        rounded-full cursor-pointer 
+                        inline-flex items-center justify-center
+                        px-1 py-2 text-[11px] 
+                        sm:px-2 sm:py-2 sm:text-[12px] 
+                        md:px-3 md:py-2 md:text-[14px]
+                        lg:px-4 lg:py-2 lg:text-[16px]
+                        hover:scale-110 hover:border-[1px] hover:border-lightblue
+                        transition-all hover:duration-150 ease-in-out`}>
                         <li>{item.name}</li>
                     </ul>
                 ))}

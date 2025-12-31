@@ -16,7 +16,7 @@ function AboutMe() {
         
         {/**Wrap the left side of grid into its own flexbox, so we can order elements vertically. Then, with items-center, we can vertically center, so text is directly centered under image*/}
         <div className="flex flex-col items-center h-full w-full">
-          <img src="https://blog2photos.s3.us-east-2.amazonaws.com/postThumbnails/authorImage.jpg" className="object-cover w-full h-full rounded-lg" />
+          <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125128/EmAboutMePic_fcjxmb.jpg" />
           <p className = 'font-merriweather mt-[12px] selection:bg-lightyellow text-[14px] lg:text-[18px]'>
             Hi, I'm Em. I'm a CS major/Math minor @ NYU. It's nice to meet you sunshine.
           </p>

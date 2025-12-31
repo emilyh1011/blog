@@ -98,7 +98,7 @@ function Blogdetail() {
 
                 <div className='flex items-center mt-5 pb-8'>
                     {/*for author image, we are using vertical images, so need to set height and width to same b4 making round */}
-                    <img src="https://blog2photos.s3.us-east-2.amazonaws.com/postThumbnails/authorImage.jpg" className='w-[50px] h-[50px] rounded-full mr-[10px]' />
+                    <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125129/EmBlogDetailsPic_sj9jvj.jpg" className='w-[50px] h-[50px] rounded-full mr-[10px]' />
 
                     <div className='m1-2'>
                         <h3 className='text-[16px]'>Em</h3>
