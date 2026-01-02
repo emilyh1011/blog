@@ -136,12 +136,9 @@ function Home() {
       console.log("Displaying normal posts");
       return (
         <>
-        {/*check if posts array has at least one post*/}
+          {/*check if posts array has at least one post*/}
           {posts.length>0? <IntroPost post={posts[0]}/>:null}
 
-          {/*Grid of rest of blog posts */}
-          {/*Again, check that our posts array has finished loading whole array, but now check if has at least 2 posts to display grid*/}
-          {/**Use posts.slice to skip 1st post in posts array to not repeat display intro post. syntax: slice(startingIndex) & returns a new sliced array */}
           {posts.length > 1 ? <Blogs posts={posts.slice(1)} /> : null}
         </>
       );
@@ -157,7 +154,6 @@ function Home() {
             </p>
           </div>
          
-
           {posts.length>0? <IntroPost post={posts[0]}/> : null}
           {posts.length>1? <Blogs posts = {posts.slice(1)}/>: null}
         </>
@@ -178,16 +174,13 @@ function Home() {
 
   return (
     <div className = "flex flex-col items-center gap-12 px-8">
-        {/*Nest components in order of how you want to view them on webpage*/}
-        {/*Search bar section, we are saving a tag as a prop to pass into our Search(tag) component*/}
-        {/*Multiple props syntax: nameOfProp = {}, nameOfProp2={} */}
-        {/*handleSearch function prop, bc altho searchbar in child, we still want to be able to access our resultPosts state in Home.jsx parent*/}
-        {/*So, when onSearch invoked in child(since this is prop name), will call handleClick function here in parent & handle logic */}
-        <Search onSelectedTag={(t)=>{setSelectedTag(t)}} onSearch={(searchQuery)=>{handleSearch(searchQuery)}}/>
+        
+        <Search onSelectedTag={(t)=>{setSelectedTag(t)}} 
+          onSearch={(searchQuery)=>{handleSearch(searchQuery)}} 
+          selectedTag = {selectedTag}/>
 
         {renderPosts()}
-
-        
+   
     </div>
 
   )

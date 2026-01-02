@@ -2,10 +2,9 @@ import React from 'react';
 import { IoIosSearch } from "react-icons/io";
 import {useState} from 'react';
 //Left off 37.18 at axios
-function Search({onSelectedTag, onSearch}) {
+function Search({onSelectedTag, onSearch, selectedTag}) {
     /*Pass a selectedTag prop to Search component and destructure it so we can access the actual value.
     This will be the tag/section that the user is currently selecting */
-
     const tags=[
         {
             id:1,
@@ -25,14 +24,6 @@ function Search({onSelectedTag, onSearch}) {
         },
     ]
 
-    //The blog posts displayed depends on the tag our user clicks on to filter the blog posts.
-    //This line means whenever a user clicks on a tag, we will store the activeIndex 
-    //useState hook. Creates an array of state variable(activeIndex) & function(setActiveIndex) to update state variable 
-    //Declare our state variable activeIndex
-    const [activeIndex, setActiveIndex]= useState(0);
-
-    //Define a searchQuery state, even though we already have this in Home.jsx, we will just "life the state" up to parent
-    //Search bar starts empty
     const [searchQuery, setSearchQuery] = useState("");
    
   return (
@@ -47,28 +38,21 @@ function Search({onSelectedTag, onSearch}) {
                 }
             }}
             className = 'flex bg-white shadow-lg items-center w-3/4 p-2 -mt-6 rounded-md sm:p-3 sm:-mt-7 sm:rounded-lg md:p-4 md:-mt-8 md:rounded-lg lg:p-6 lg:-mt-9 lg:rounded-xl'>
+            
             <IoIosSearch className= 'text-[14px] sm:text-[16px] md:text-[20px] text-gray-400' />
             <input type = 'text' placeholder="Search..." value= {searchQuery} className = 'text-[13px] sm:text-[14px] md:text-[16px] outline-none ml-2 w-full' 
-                onChange={(event)=>{
-                    setSearchQuery(event.target.value); //Every time user changes input in search bar, we want to save this as a possible search query
-                }}
+                onChange={(event)=>{setSearchQuery(event.target.value);}}
             />
         </form>
 
-        {/*Tags to filter btwn diff blog sections. Map each item in tags array as a new bullet in
-        unordered list. We want to display the name of the section, so item.name. 
-        To make tags all appear in horizontal line, we can use flex style for div*/}
         <div className = 'flex justify-center w-full gap-2 mt-3 sm:gap-4 sm:mt-4 md:gap-6 md:mt-4 lg:gap-8 lg:mt-5'>
-            
-                {/*Add index as another parameter, since we were able to save this activeIndex */}
-                {tags.map((item, index)=>(
+                {tags.map((item)=>(
                     <ul key={item.id}
-                        onClick={() => { 
-                            setActiveIndex(index); 
+                        onClick={() => {  
                             console.log("selected tag:", item.name);
                             onSelectedTag(item.name) 
                         }}
-                        className={`${index == activeIndex ?
+                        className={`${item.name == selectedTag ?
                             'bg-lightblue text-white' : null} 
                         rounded-full cursor-pointer 
                         inline-flex items-center justify-center
