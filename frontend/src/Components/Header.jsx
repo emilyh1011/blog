@@ -15,7 +15,7 @@ function Header({className}) {
 
   return (
     <div className = {`flex justify-between items-center w-full ${className}`}>
-        <img src = {logo} className = 'w-[120px] sm:w-[135px] md:w-[160px] lg:w-[175px]'/>
+        <img src = {logo} className = 'w-[110px] sm:w-[135px] md:w-[160px] lg:w-[175px]'/>
 
         <ul className = 'flex gap-3 sm:gap-4 md:gap-6 lg:gap-8'>
 
