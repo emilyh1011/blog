@@ -10,7 +10,7 @@ function AboutMe() {
 
   return (
 
-    <div className="flex flex-col px-8 w-full items-center gap-8">
+    <div className="flex flex-col px-2 sm:px-4 md:px-6 px-8 w-full items-center gap-8">
      
 
       <div className="w-3/5 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 md:gap-6 lg:gap-8">
@@ -26,7 +26,7 @@ function AboutMe() {
 
         {/**Right side of grid: text */}
         <div className="flex flex-col justify-center items-center w-full h-full border rounded-lg gap-4
-          px-4 py-4 sm:px-4 sm:py-6 md:px-4 md:py-4 lg:px-6 lg:py-4">
+          px-4 py-6 sm:px-4 sm:py-6 md:px-4 md:py-4 lg:px-6 lg:py-4">
           
             <span className = "font-merriweather text-[12px] leading-5 sm:text-[12px] sm:leading-6 md:text-[12px] md:leading-6 lg:text-[14px] lg:leading-8 selection:bg-lightblue selection:text-lightyellow">
               I hope you know I think you are special, and I hope there never comes a day that I have to ask myself, “Why are you special to me?”
