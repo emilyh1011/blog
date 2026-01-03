@@ -25,6 +25,6 @@ For more, check: https://iamemilyhan.notion.site/projects-experiences
 ## Continuation
 For a continuation of my work, I made visualized storytelling versions for 3 of the stories on my blog. If you would like to check them out, click here:
 
-1. **Product**: [Product Notion Page](https://www.notion.so/Storyteller-Introduction-1bb341677d6880649e2eea1368bea828?pvs=21) 
-2. **When People Ask Me About Home**: [When People Ask Me About Home Notion Page](https://www.notion.so/New-Story-Home-53f341677d6883b6aed481659b8264c9?pvs=21) 
-3. **I Am Em**: [I am Emily Han Notion Page](https://www.notion.so/I-am-Emily-Han-18c341677d68807f9723c1489d40608b?pvs=21) (video)
+1. **Product**: [Product Notion Page](https://iamemilyhan.notion.site/product-story) 
+2. **When People Ask Me About Home**: [When People Ask Me About Home Notion Page](https://iamemilyhan.notion.site/home-story) 
+3. **I Am Em**: [I am Emily Han Notion Page](https://iamemilyhan.notion.site) (video)
