@@ -81,13 +81,7 @@ function Blogdetail() {
 
 
     return (
-        //One overarching container for title box, image, and text. We want to center everything on page, so items-center
         <div className='flex flex-col items-center px-2 sm:px-4 md:px-6 lg:px-8 gap-6'>
-
-            {/**Wrap the identifying information in a div, we want to left align this text */}
-            {/**Put information in a flexbox. flex-col because we want everything to display in different rows aka position items vertically,
-             * 
-             */}
 
             <div className="flex flex-col w-3/5 sm:w-2/5 gap-4 sm:gap-4 md:gap-4">
                 <div className='flex flex-col'>
@@ -96,7 +90,7 @@ function Blogdetail() {
                 </div>
 
                 <div className='flex items-center lg:pb-1'>
-                    {/*for author image, we are using vertical images, so need to set height and width to same b4 making round */}
+                    
                     <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125129/EmBlogDetailsPic_sj9jvj.jpg" className='w-9 h-9 sm:w-9 sm:h-9 md:w-9 md:h-9 lg:w-12 lg:h-12 rounded-full mr-2' />
 
                     <div className='flex items-center'>
@@ -115,9 +109,8 @@ function Blogdetail() {
           
             
             {/**To maintain whitespace in String to display in jsx, use whitespace-pre-wrap */}
-
             {/*Use ReactMarkdown, so we can display italicized texts from our MongoDB "content" field, ex: italicized lyrics. 
-                    In MongoDB document, use *italic text* */}
+                In MongoDB document, use *italic text* */}
             <ReactMarkdown className='w-3/5 sm:w-2/5 whitespace-pre-wrap font-merriweather text-[14px] leading-5 sm:text-[14px] sm:leading-6 md:text-[16px] md:leading-7 lg:text-[18px] lg:leading-9'>
                 {post.content}
             </ReactMarkdown>
