@@ -89,20 +89,20 @@ function Blogdetail() {
              * 
              */}
 
-            <div className="flex flex-col w-3/5 sm:w-2/5 gap-2 md:gap-4">
+            <div className="flex flex-col w-3/5 sm:w-2/5 gap-2 sm:gap-4 md:gap-4">
                 <div className='flex flex-col'>
-                    <h3 className='text-[18px] sm:text-[26px] md:text-[32px] lg:text-[40px] font-bold text-left'>{post.title}</h3>
-                    <h3 className='text-lightblue font-semibold text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-left'>{post.tag}</h3>
+                    <h3 className='text-[25px] sm:text-[26px] md:text-[32px] lg:text-[40px] font-bold text-left'>{post.title}</h3>
+                    <h3 className='text-lightblue font-semibold text-[18px] sm:text-[18px] md:text-[18px] lg:text-[20px] text-left'>{post.tag}</h3>
                 </div>
 
-                <div className='flex items-center sm:pb-1 md:pb-1 lg:pb-2'>
+                <div className='flex items-center lg:pb-1'>
                     {/*for author image, we are using vertical images, so need to set height and width to same b4 making round */}
                     <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125129/EmBlogDetailsPic_sj9jvj.jpg" className='w-9 h-9 sm:w-9 sm:h-9 md:w-9 md:h-9 lg:w-12 lg:h-12 rounded-full mr-2' />
 
                     <div className='flex items-center'>
                         <div className="flex flex-col">
-                            <h3 className='font-bold text-[12px] sm:text-[12px] md:text-[13px] lg:text-[18px]'>Em</h3>
-                            <h3 className='text-gray-500 text-[10px] sm:text-[10px] md:text-[11px] lg:text-[14px]'>{post.dateCreated}</h3>
+                            <h3 className='font-bold text-[13px] sm:text-[13px] md:text-[13px] lg:text-[18px]'>Em</h3>
+                            <h3 className='text-gray-500 text-[11px] sm:text-[11px] md:text-[11px] lg:text-[14px]'>{post.dateCreated}</h3>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ function Blogdetail() {
 
             {/*Use ReactMarkdown, so we can display italicized texts from our MongoDB "content" field, ex: italicized lyrics. 
                     In MongoDB document, use *italic text* */}
-            <ReactMarkdown className='w-3/5 sm:w-2/5 whitespace-pre-wrap font-merriweather text-[12px] leading-5 sm:text-[14px] sm:leading-6 md:text-[16px] md:leading-7 lg:text-[18px] lg:leading-9'>
+            <ReactMarkdown className='w-3/5 sm:w-2/5 whitespace-pre-wrap font-merriweather text-[14px] leading-5 sm:text-[14px] sm:leading-6 md:text-[16px] md:leading-7 lg:text-[18px] lg:leading-9'>
                 {post.content}
             </ReactMarkdown>
 
