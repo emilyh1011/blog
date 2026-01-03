@@ -173,7 +173,7 @@ function Home() {
 
 
   return (
-    <div className = "flex flex-col items-center gap-8 md:gap-12 px-8">
+    <div className = "flex flex-col items-center gap-8 md:gap-12 px-2 sm:px-4 md:px-6 lg:px-8">
         
         <Search onSelectedTag={(t)=>{setSelectedTag(t)}} 
           onSearch={(searchQuery)=>{handleSearch(searchQuery)}} 

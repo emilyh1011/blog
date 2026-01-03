@@ -10,7 +10,7 @@ function AboutMe() {
 
   return (
 
-    <div className="flex flex-col px-2 sm:px-4 md:px-6 px-8 w-full items-center gap-8">
+    <div className="flex flex-col px-2 sm:px-4 md:px-6 lg:px-8 w-full items-center gap-8">
      
 
       <div className="w-3/5 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 md:gap-6 lg:gap-8">

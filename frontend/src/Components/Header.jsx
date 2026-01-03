@@ -19,9 +19,9 @@ function Header({className}) {
 
         <ul className = 'flex gap-3 sm:gap-4 md:gap-6 lg:gap-8'>
 
-            <li className = 'hover:font-bold cursor-pointer text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/')}>Welcome</li>
-            <li className = 'hover:font-bold cursor-pointer text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/Blog')}>Blog </li>
-            <li className = 'hover:font-bold cursor-pointer text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/AboutMe')}>About Me</li>
+            <li className = 'hover:font-bold cursor-pointer text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/')}>Welcome</li>
+            <li className = 'hover:font-bold cursor-pointer text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/Blog')}>Blog </li>
+            <li className = 'hover:font-bold cursor-pointer text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px]' onClick={()=>navigate('/AboutMe')}>About Me</li>
             
         </ul>
 
