@@ -4,7 +4,6 @@
 //Although our photo is named BlogLogo2, we can change the name 
 //to whatever we want when we import
 import { RiNotionFill } from "react-icons/ri";
-import logo from './../assets/Images/LogoLighter-Photoroom.png'
 import React from 'react'
 import { PiInstagramLogoFill } from "react-icons/pi"
 import {useNavigate} from 'react-router-dom'
@@ -16,7 +15,7 @@ function Header({className}) {
 
   return (
     <div className = {`flex justify-between items-center w-full ${className}`}>
-        <img src = {logo} className = 'w-[110px] sm:w-[135px] md:w-[160px] lg:w-[175px]'/>
+        <img src = "https://res.cloudinary.com/dwhtlckoy/image/upload/v1767463642/keepwalkingsunshinelogo_idc6lq.png" className = 'w-[110px] sm:w-[135px] md:w-[160px] lg:w-[175px]'/>
 
         <ul className = 'flex gap-3 sm:gap-4 md:gap-6 lg:gap-8'>
 
