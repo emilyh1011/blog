@@ -3,6 +3,7 @@
 //Import logo from assets folder
 //Although our photo is named BlogLogo2, we can change the name 
 //to whatever we want when we import
+import { RiNotionFill } from "react-icons/ri";
 import logo from './../assets/Images/LogoLighter-Photoroom.png'
 import React from 'react'
 import { PiInstagramLogoFill } from "react-icons/pi"
@@ -25,10 +26,10 @@ function Header({className}) {
             
         </ul>
 
-        <button className='rounded-full flex items-center cursor-pointer transition duration-150
-          text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] bg-yellow-400 mr-2 sm:mr-2 md:mr-3 lg:mr-4
+        <button className='rounded-full flex items-center cursor-pointer transition duration-150 font-medium
+          text-[12px] sm:text-[14px] md:text-[14px] lg:text-[16px] bg-yellow-400 mr-2 sm:mr-2 md:mr-3 lg:mr-4
           hover:text-yellow-400 hover:font-bold hover:duration-150 hover:bg-black active:border-yellow-400'
-          onClick={()=>window.open('https://www.instagram.com/emsfeelingsjournal/?next=%2F', '_blank')}>Follow <PiInstagramLogoFill className = 'ml-1 md:ml-3'/></button>
+          onClick={()=>window.open('https://iamemilyhan.notion.site', '_blank')}>Follow <RiNotionFill className = 'ml-1 md:ml-3'/></button>
     
     </div>
    
