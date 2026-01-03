@@ -10,69 +10,49 @@ function AboutMe() {
 
   return (
 
-    <div className="mt-6">
+    <div className="flex flex-col px-8 w-full items-center gap-8">
+     
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 mb-8 md:mb-12 lg:mb-12 px-4 md:px-8 lg:px-12 xl:px-24 cursor-pointer justify-center items-top gap-14 md:gap-5 lg:gap-7">
+      <div className="w-3/5 grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-6 lg:gap-8">
         
-        {/**Wrap the left side of grid into its own flexbox, so we can order elements vertically. Then, with items-center, we can vertically center, so text is directly centered under image*/}
-        <div className="flex flex-col items-center h-full w-full">
-          <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125128/EmAboutMePic_fcjxmb.jpg" />
-          <p className = 'font-merriweather mt-[12px] selection:bg-lightyellow text-[14px] lg:text-[18px]'>
+        <div className="flex flex-col items-center gap-2">
+          <img src="https://res.cloudinary.com/dwhtlckoy/image/upload/v1767125128/EmAboutMePic_fcjxmb.jpg"
+            className = "rounded-lg object-cover w-full h-full" />
+          <p className = 'font-merriweather selection:bg-lightyellow text-[12px] sm:text-[12px] md:text-[12px] lg:text-[14px]'>
             Hi, I'm Em. I'm a CS major/Math minor @ NYU. It's nice to meet you sunshine.
           </p>
         </div>
        
 
         {/**Right side of grid: text */}
-        <div className="flex items-center justify-center w-full h-full">
-          <p className="font-merriweather text-left leading-loose text-[18px] lg:text-[20px] xl:text-[22px]
-          px-[35px] lg:px-[40px] xl:px-[45px] py-8 md:py-12 lg:py-16 xl:py-24 
-          border-2 h-full w-full selection:bg-lightblue selection:text-lightyellow">
-            I hope you know I think you are special, and I hope there never comes a day that I have to ask myself, “Why are you special to me?”
-            <br/>
-            <br/>
-            I hope I never forget what made you special.
-            <br/>
-            <HR.Trimmed className="w-[350px] md:w-[250px] lg:w-[350px] mt-[20px]" />
-            <br/>
-            Most importantly, I hope I never find a day where we became strangers because I forgot what made you sparkle and you forgot what made me shine.
-            <br/>
-            <br/>
-            I think you are sunshine, and I hope I think of you that way forever.
-            <br/>
-            <br/>
-            <p className= " font-bold selection:bg-lightyellow selection:text-black">@emsfeelingsjournal</p>
+        <div className="flex flex-col justify-center items-center w-full h-full border rounded-lg gap-4
+          px-4 py-6 sm:px-4 sm:py-6 md:px-4 md:py-4 lg:px-6 lg:py-4">
+          
+            <span className = "font-merriweather text-[12px] leading-6 sm:text-[12px] sm:leading-6 md:text-[12px] md:leading-6 lg:text-[14px] lg:leading-8 selection:bg-lightblue selection:text-lightyellow">
+              I hope you know I think you are special, and I hope there never comes a day that I have to ask myself, “Why are you special to me?”
+            </span>
+
+            <span className = "font-merriweather text-[12px] leading-6 sm:text-[12px] sm:leading-6  md:text-[12px] md:leading-6 lg:text-[14px] lg:leading-8 selection:bg-lightblue selection:text-lightyellow">
+              I hope I never forget what made you special.
+              Most importantly, I hope I never find a day where we became strangers because I forgot what made you sparkle and you forgot what made me shine.
+            </span>
+
+            <span className = "font-merriweather text-[12px] leading-6 sm:text-[12px] sm:leading-6  md:text-[12px] md:leading-6 lg:text-[14px] lg:leading-8 selection:bg-lightblue selection:text-lightyellow">
+               I think you are sunshine, and I hope I think of you that way forever.
+            </span>
+           
+          
+          
+            <HR.Trimmed className="w-4/5" />
+           
+           
+           
+            <span className= "text-[12px] sm:text-[12px] md:text-[12px] lg:text-[14px] font-semibold selection:bg-lightyellow selection:text-black">Em</span>
             
-          </p>
+          </div>
 
-        </div>
+        
 
-
-      </div>
-
-      <div className="bg-lightblue text-center font-merriweather px-8 md:px-12 py-8 lg:py-16
-      text-[22px] md:text-[24px] lg:text-[28px] selection:bg-lightblue selection:text-lightyellow">
-        <p>A collection of my feelings. A bit over-feeling and a bit over-dramatizing, but that's just real feelings.<br></br> I hope you can find some parts relatable.</p>
-      </div>
-
-
-      {/**When person highlights, color of text is white and highlight is light blue */}
-      <div className="text-center font-merriweather py-24 px-16 med:px-28 lg:px-44 xl:px-64 text-[22px] md:text-[30px] lg:text-[40px] leading-loose selection:bg-lightblue selection:text-lightyellow">
-        <p>I created a database where I can keep all my personal antecdotes and feelings alive. At the core of it all, this is a collection of letters for people I have gotten to know and love. I am no one without love. I hope you find yourself in these. </p>
-      </div>
-
-      <HR.Trimmed className="mb-24 w-[600px]" />
-
-
-
-      {/**Add a video player */}
-      <div className = 'mb-40'>
-        <h1 className="text-center font-merriweather text-[40px] font-bold mb-[30px] selection:bg-lightblue selection:text-lightyellow ">@emsfeelingsjournal</h1>
-
-        {/**Remember justify- horiz center, align- vertical center */}
-        <div className="flex justify-center hover: cursor-pointer">
-          <ReactPlayer controls={true} url={'https://blog2photos.s3.us-east-2.amazonaws.com/IAmEmVideo.mp4'} height="500" className="object-center " />
-        </div>
 
       </div>
       

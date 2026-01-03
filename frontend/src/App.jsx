@@ -31,12 +31,12 @@ function App() {
   //We must remove the padding fromour overall div for our whole webpage for welcome div or else affects our carousel and photos sizing
   return (
     <>
-      <div className = {isWelcomePage? 'p-0' : 'p-[20px]'}>
+      <div className = {isWelcomePage? 'p-0' : ''}>
 
         {/**Header*/}
         {/**Welcome Page: Span header top edge of outermost div, code taken from tailwind CSS site: absolute inset-x-0 top-0 h-16 */}
         {/**Remember using "absolute" means we are positioning element relative to a "relative" parent */}
-        <Header className={isWelcomePage ? 'absolute inset-x-0 top-10 h-16 mb-0 z-50 bg-transparent text-white': 'mb-[15px]'}/>
+        <Header className={isWelcomePage ? 'absolute inset-x-0 top-10 h-16 mb-0 z-50 bg-transparent text-white': 'mb-3 sm:mb-4 md:mb-5 lg:mb-6'}/>
 
         {/**Add routes */}
        
