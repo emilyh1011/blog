@@ -89,7 +89,7 @@ function Blogdetail() {
              * 
              */}
 
-            <div className="flex flex-col w-3/5 sm:w-2/5 gap-2 sm:gap-4 md:gap-4">
+            <div className="flex flex-col w-3/5 sm:w-2/5 gap-4 sm:gap-4 md:gap-4">
                 <div className='flex flex-col'>
                     <h3 className='text-[25px] sm:text-[26px] md:text-[32px] lg:text-[40px] font-bold text-left'>{post.title}</h3>
                     <h3 className='text-lightblue font-semibold text-[18px] sm:text-[18px] md:text-[18px] lg:text-[20px] text-left'>{post.tag}</h3>
